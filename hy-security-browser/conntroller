@@ -1,0 +1,8 @@
+/connect   获取所有的社交账号的绑定信息 spring security 默认提供的
+查询后会下发到  这个路径显示  connect/status
+
+
+ /connect/weixin  绑定微信/需要是POST请求
+ /connect/weixin  解帮微信/需要是delete请求
+ connect/weixinConnect 绑定成功会转跳到此路径
+ connect/weixinConnected 解帮绑定转跳到此路径

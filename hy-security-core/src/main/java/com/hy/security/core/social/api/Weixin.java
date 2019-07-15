@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package com.hy.security.core.social.api;
+
+import com.hy.security.core.social.entity.WeixinUserInfo;
+
+/**
+ * 微信API调用接口
+ * 
+ * @author zhailiang
+ *
+ */
+public interface Weixin {
+
+	/* (non-Javadoc)
+	 * @see com.ymt.pz365.framework.security.social.api.SocialUserProfileService#getUserProfile(java.lang.String)
+	 */
+	WeixinUserInfo getUserInfo(String openId);
+	
+}

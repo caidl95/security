@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>login</title>
+	<!-- 标题logo -->
+	<link rel="shortcut icon" href="./imgs/logo1.jpg">
+
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- 本地文件 -->
+	<link  rel="stylesheet" href="index.css">
+
+	
+</head>
+<body>
+	<div class=".container" id="backdrop">	
+		<div class="login-flex">
+		    <div class="container login-container login-container-flex">
+		        <div class="row login-page">
+		            <div>
+		                <div>
+		                    <div class="loginDiv">
+		                        <div>
+		                            <div id="login_logo" class="icon-logo"></div>
+		                            <div class="icon-fboxclient login_text"></div>
+		                        </div>
+		                    </div>
+		                    <div class="loginPngDiv">
+		                        <div class="pngDiv"></div>
+		                    </div>
+		                    <div class="errorMessage">
+		                        <strong class="login-error"> </strong>
+		                    </div>
+		                    <div class="panel-body" >
+		                        <form action="/authentication/form" method="post">
+		                            <fieldset class="panel-fieldset">
+		                                <div class="form-group">
+		                                    <input id="username" class="form-control login_userName" placeholder="用户名/手机/邮箱"   name="username" value="">
+		                                </div>
+		                                <div class="form-group">
+		                                    <input id="password" type="password" class="form-control login_password" placeholder="请输入密码"  autocomplete="off" data-val="true"  name="password">
+		                                </div>
+		                                    <div class="form-group login-remember">
+		                                        <label class="switch">
+		                                    		 <input name="remember-me" type="checkbox" value="true">记住我 
+		                                        </label>
+		                                       
+		                                    </div>
+		                                <div class="form-group login-remember">
+		                                	<input type="text" name="imageCode">
+		                                	<img alt="" src="/code/image">
+		                                </div>    
+		                                    
+		                                <div class="form-group">
+		                 				     <input type="submit"  id="login_btn"  name="button" class="btn form-control login_btn" value="登录">
+		                 				     <!--  <button id="login_btn"  name="button" class="btn form-control login_btn" value="login" disabled="disabled">登　录</button> -->
+		                                </div>
+		                            </fieldset>
+		                     </form>  
+		                        	<ul id="list-unstyled-login-01" class="list-unstyled register_display login-btn-register">
+		                            	<li class="login_linkStyle"><a class="linkStyle" href="">用户注册</a></li>
+		                        	</ul>
+		                      	  	<ul id="list-unstyled-login-02" class="list-unstyled register_display login-btn-forgotpwd">
+		                            	<li class="login_linkStyle"><a class="linkStyle" href="">找回密码</a></li>
+		                        	</ul>
+		                    </div>
+		                </div>
+
+		            </div>
+		        </div>
+		        <footer class="icp-display login-footer" id="icp-display-login">
+		            <a target="_blank" href="http://www.miibeian.gov.cn/">沪ICP备10039220000号</a>
+		        </footer>
+		    </div>
+		</div>	
+	</div>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

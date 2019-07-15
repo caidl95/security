@@ -1,0 +1,69 @@
+@CHARSET "UTF-8";
+	body{
+		background-color: rgba(250,250,250,1);
+	}
+	
+	@keyframes chan{
+		0% {color: #0af;} 25%{color: #9fa;} 50%{color: #e08;} 75%{color: #f90;}
+		100%{color: #ff0;} 
+	}
+	a{
+		color:#808080;
+		animation : chan 10s linear 0s infinite;
+	}
+
+	
+	#backdrop{
+		width: auto;
+		background-repeat: no-repeat;
+		overflow: hidden;/* 解决粘连问题  */
+	}
+	
+	.loginDiv{
+		margin: 150px 0 0 0 ;
+		position: relative;
+		width: auto;
+	}
+
+	#login_logo{
+		background-image: url("1555552102.png");
+		background-size: 100%;
+		width: 200px;
+		height: 200px;
+		left: 41%;
+		position: relative;
+	}
+
+	#login_btn{
+		color:  #110011;
+		background-color: rgba(0,125,255,1);
+	}
+
+
+	.panel-body{
+		width: auto;
+	}
+
+	.panel-fieldset{
+		position: relative;
+		width: 350px;
+		height: 350px;
+		left: 35%;
+	}
+
+	#icp-display-login{
+		position: relative;
+		left: 44%;
+	}
+
+	#list-unstyled-login-01{
+		position: relative;
+		bottom:120px;
+		left: 37%;
+	}
+
+	#list-unstyled-login-02{
+		position: relative;
+		bottom:150px;
+		left: 59%;
+	}
